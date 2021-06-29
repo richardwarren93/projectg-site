@@ -1,0 +1,123 @@
+@font-face {font-family: "P22LatimerW00-Regular"; src: url("//db.onlinewebfonts.com/t/dbbd3f3d6facdd54879a2d764c44fa7e.eot"); src: url("//db.onlinewebfonts.com/t/dbbd3f3d6facdd54879a2d764c44fa7e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/dbbd3f3d6facdd54879a2d764c44fa7e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/dbbd3f3d6facdd54879a2d764c44fa7e.woff") format("woff"), url("//db.onlinewebfonts.com/t/dbbd3f3d6facdd54879a2d764c44fa7e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/dbbd3f3d6facdd54879a2d764c44fa7e.svg#P22LatimerW00-Regular") format("svg"); }
+
+body{
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  font-family: "P22LatimerW00-Regular"
+}
+  #header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: clip;
+  }
+  #header-hero{
+    align-items: center;
+    display: flex;
+    overflow: clip;
+    flex-direction: column;
+    position: relative;
+  }
+
+#header-buttons{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 100px;
+}
+
+h3{
+  color:orangered;
+  margin: -45px;
+  font-size: 26px;
+}
+
+#hero-overlay-logo {
+    position:absolute;
+    width: 100%;
+    min-height:20px;
+    align-content: center;
+    z-index: 1;
+}
+#hero-overlay-logo-image {
+  max-width: 100%;
+}
+
+p{
+  color: orangered;
+  font-size: 24px;
+}
+
+#copyright {
+  color: white;
+  margin: 30px;
+  font-size: 18px;
+}
+
+#footer {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#header-fade-out {
+  background-image: linear-gradient(to bottom, transparent, black);
+  bottom: 0;
+  height: 300px;
+  position: absolute;
+  width: 100%;
+}
+
+.header-button {
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  position: relative;
+  width: 400px;
+  background-image: url("header-button.png");
+  z-index: 1;
+  margin: 30px;
+}
+.header-button>div {
+  top: 35%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color:black;
+  font-size: 26px;
+  font-weight: bold;
+  transition: letter-spacing 0.2s;
+}
+.header-button:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow:0px 0px 30px orangered;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+#icons>img {
+  width: 75px;
+  margin: 10px;
+}
+
+#windwalk-link-image {
+  max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  #header-buttons {
+    flex-direction: column;
+  }
+  .header-button {
+    margin: 0;
+  }
+}
